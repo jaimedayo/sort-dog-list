@@ -2,6 +2,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 
 import processing.core.PApplet;
@@ -59,7 +60,7 @@ public class Logic {
 		switch(c) {
 		
 		  case 0://ordenamiento natural ID 
-		    
+		    Collections.sort(listDog);
 		    break;
 		  case 1: //ordenar nombre perro
 		   
