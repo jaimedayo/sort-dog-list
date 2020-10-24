@@ -26,9 +26,17 @@ public class Main extends PApplet{
 	
 	public void draw() {
 		background(0);
+		rectMode(CORNER);
 		for (int i=0 ;i <controller.listDog().size();i++) {
 			controller.listDog().get(i).draw((i*85)+5);
 		}
+		rectMode(CENTER);
+		fill (220);
+		rect(300,300,430,100);
+		fill(0);
+		textSize(20);
+		text("click to sort the list of a new way",150,300);
+		textSize(10);
 	//controller.draw();
 	}
 	
