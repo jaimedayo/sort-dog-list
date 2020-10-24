@@ -18,13 +18,14 @@ public class Main extends PApplet{
 	}
 	
 	public void setup() {
+		
 		controller = new Controller(this);
 	}
 	
 	public void draw() {
 		background(0);
 		
-		
+	
 	}
 	
 	public void mousePressed() {
