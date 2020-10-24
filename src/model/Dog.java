@@ -40,4 +40,14 @@ public int compareTo(Dog nextDog) {
 	
 	return this.id - nextDog.getId();
 }
+public void draw(int x) {
+	app.fill(220);
+	app.rect(x,20,120,600);
+	app.text(this.id,x,20);
+	app.text(this.name,x,50);
+	app.text(this.age,x,80);
+	app.text(this.race,x,110);
+	app.text(this.date,x,140);
+	
+}
 }
