@@ -16,9 +16,14 @@ public class Logic {
 	private LinkedList<Dog> listDog;
 	private PApplet app;
 	
+	private DogAgeCompare dogAge;
+	private DogNameCompare dogName;
+	
 	public  Logic(PApplet app) {
 		this.app=app;
 		
+		dogName= new DogNameCompare();
+		dogAge= new DogAgeCompare();
 		list1 = app.loadStrings("../data/datosUno.txt");
 		list2 = app.loadStrings("../data/datosDos.txt");
 		listDog = new LinkedList<Dog>();
@@ -63,10 +68,10 @@ public class Logic {
 		    Collections.sort(listDog);
 		    break;
 		  case 1: //ordenar nombre perro
-		   
+			  Collections.sort(listDog,dogName);
 		    break;
 		  case 2: //ordenar edad del perro
-			   
+			  Collections.sort(listDog,dogAge);
 	break;
 		  case 3: // ordenar raza del perro
 			   

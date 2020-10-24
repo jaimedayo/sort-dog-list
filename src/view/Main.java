@@ -15,7 +15,7 @@ public class Main extends PApplet{
 	
 	public void settings() {
 		size(860,500);
-		c=1;
+		c=10;
 	}
 	
 	public void setup() {
@@ -33,7 +33,8 @@ public class Main extends PApplet{
 	}
 	
 	public void mousePressed() {
-		c=0;
+		c++;
+		if(c>=5) {c=0;}
 		controller.sortList(c);
 	controller.sortList(c);	
 		}
