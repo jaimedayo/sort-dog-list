@@ -41,18 +41,17 @@ public class Logic {
 			
 			
 			
-			for (int j = 0; j < arrayWord.length; j++) {
+		
 				
 				int id = Integer.parseInt(arrayWord[0]);
 				String name = (arrayWord[1]);
 				int age = Integer.parseInt(arrayWord[2]);
-				String race = "didn´t";
-				String date = "found";
+				String race = "no found";
+				String date = "no found";
 				
 			
 					listDog.add( new Dog (id, name, age, race, date, app));
 					
-			}
 			
 		}
 	}

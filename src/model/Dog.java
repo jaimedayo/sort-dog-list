@@ -42,12 +42,13 @@ public int compareTo(Dog nextDog) {
 }
 public void draw(int x) {
 	app.fill(220);
-	app.rect(x,20,120,600);
-	app.text(this.id,x,20);
-	app.text(this.name,x,50);
-	app.text(this.age,x,80);
-	app.text(this.race,x,110);
-	app.text(this.date,x,140);
+	app.rect(x,20,90,150);
+	app.fill(0);
+	app.text(this.id,x+20,40);
+	app.text(this.name,x+20,60);
+	app.text(this.age,x+20,80);
+	app.text(this.race,x+20,100);
+	app.text(this.date,x+20,120);
 	
 }
 }

@@ -14,7 +14,7 @@ public class Main extends PApplet{
 	}
 	
 	public void settings() {
-		size(800,600);
+		size(860,500);
 		c=0;
 	}
 	
@@ -27,7 +27,7 @@ public class Main extends PApplet{
 	public void draw() {
 		background(0);
 		for (int i=0 ;i <controller.listDog().size();i++) {
-			controller.listDog().get(i).draw(i*125);
+			controller.listDog().get(i).draw((i*85)+5);
 		}
 	//controller.draw();
 	}
